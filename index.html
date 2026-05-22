@@ -1,0 +1,72 @@
+### index.html
+This creates a sleek, dark-themed dashboard. 
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Hub</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 {
+            color: #58a6ff;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 10px;
+        }
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #238636;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #2ea44f;
+        }
+        #message {
+            margin-top: 15px;
+            font-style: italic;
+            color: #7d8590;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Project Hub Dashboard</h1>
+    <p>Welcome to my development environment. This page handles dynamic configurations for upcoming builds.</p>
+    
+    <div class="card">
+        <h3>System Status</h3>
+        <p>Click below to initialize the repository's core JavaScript connection test.</p>
+        <button class="btn" onclick="initializeSystem()">Run System Check</button>
+        <p id="message"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
